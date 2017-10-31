@@ -1,0 +1,19 @@
+ <form enctype="multipart/form-data">
+       <div id="uploadfile" class="uploadfile">
+        <div class="form-group ">
+      <label class="control-label " for="fileupload">
+       Upload the Signed file
+      </label>
+        <input type="file" id="userImage" name="userImage" class="btn-info" />
+        <input type="button"  class="btn-warning" (click)="uploadphyreport()" value="Upload File">
+        </div>
+       </div> 
+
+
+        <div id="fileexist" class="fileexist">
+        <h4>Uploaded signed file is <a href="http://misrusachd.in/api/collegeapi/selectblob.php?requesttype=actionplans&aid={{aid}}">{{fileexists}}</a></h4>
+        </div>
+<div id="spinner" class="spinner">
+<img src="./assets/spinner1.gif">
+</div>			        
+    </form>

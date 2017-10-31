@@ -1,0 +1,61 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Update Baseline Data</div>
+  <div class="panel-body">
+
+<div class="table-responsive">
+<table class="table table-bordered">
+  
+  <thead>
+      
+    <tr>
+    <td><b>S.No</b></td>
+     <td><b>Parameter</b></td>
+      <td><b>2016-17</b></td>
+      <td><b>2017-18</b></td>
+      
+      
+      <td width=190 align="center"><b>Action</b></td>
+    
+    </tr>
+  </thead>
+   
+  <tbody>
+      
+    
+       <tr  *ngFor="let param of parameters">
+         
+          <td>{{param.mainparamid}}</td>
+        <td>{{param.parameter}}</td>
+        <td></td>
+        <td></td>
+        
+        <td> 
+           <!-- <a class="btn btn-info" routerLink="/show/{{employee._id}}">Detail</a> --> 
+           <div *ngIf="param.aid; else newvalue">
+           <a class="btn btn-success" routerLink="/edit/{{param.aid}}/{{param.mainparamid}}">Edit</a></div>
+           <ng-template #newvalue><a class="btn btn-success" routerLink="/edit/0/{{param.mainparamid}}">Edit</a></ng-template>
+          
+           
+           
+          </td>
+          
+
+     </tr>
+     
+     
+     
+  </tbody>
+ 
+</table>
+
+ 
+</div>
+
+   
+
+
+      
+     
+   
+  </div>  
+</div>

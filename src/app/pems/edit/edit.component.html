@@ -1,0 +1,265 @@
+<div class="panel panel-default">
+  <div class="panel-heading"><b>{{heading}}</b></div>
+  <div class="panel-body">
+    <form class="form-horizontal" (submit)="updateParameter()" enctype="multipart/form-data">
+  
+      <div *ngIf="paramid == 1 || paramid ==2 || paramid == 3 ||paramid == 4 ||paramid == 5" >
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+         
+            <tr><td colspan=4 align="Center"><b>For session 2016-17</b><br><i></i></td></tr>
+            <tr><td  align="Center">Arts</td><td  align="Center">Science</td><td  align="Center">Commerce</td><td  align="Center">Other Faculty</td></tr>
+          </thead> 
+            <tr><td>No. of Ph.D Students<input type="text" class="form-control"  [(ngModel)]="model.pha" name="pha">
+            No. of PG Students<input type="text" class="form-control"  [(ngModel)]="model.pga" name="pga">
+            No. of UG Students<input type="text" class="form-control"  [(ngModel)]="model.ga" name="ga">
+            No. of Diploma Students<input type="text" class="form-control"  [(ngModel)]="model.da" name="da">
+            No. of Career Oriented Courses Students<input type="text" class="form-control"  [(ngModel)]="model.oa" name="oa">
+            </td>
+            <td>No. of Ph.D Students<input type="text" class="form-control"  [(ngModel)]="model.phs" name="phs">
+              No. of PG Students<input type="text" class="form-control"  [(ngModel)]="model.pgs" name="pgs">
+              No. of UG Students<input type="text" class="form-control"  [(ngModel)]="model.gs" name="gs">
+              No. of Diploma Students<input type="text" class="form-control"  [(ngModel)]="model.ds" name="ds">
+              No. of Career Oriented Courses Students<input type="text" class="form-control"  [(ngModel)]="model.os" name="os">
+              </td>
+            <td>No. of Ph.D Students<input type="text" class="form-control"  [(ngModel)]="model.phc" name="phc">
+                No. of PG Students<input type="text" class="form-control"  [(ngModel)]="model.pgc" name="pgc">
+                No. of UG Students<input type="text" class="form-control"  [(ngModel)]="model.gc" name="gc">
+                No. of Diploma Students<input type="text" class="form-control"  [(ngModel)]="model.dc" name="dc">
+                No. of Career Oriented Courses Students<input type="text" class="form-control"  [(ngModel)]="model.oc" name="oc">
+                </td>
+            
+               <td>No. of Ph.D Students<input type="text" class="form-control"  [(ngModel)]="model.phof" name="phof">
+                  No. of PG Students<input type="text" class="form-control"  [(ngModel)]="model.pgof" name="pgof">
+                  No. of UG Students<input type="text" class="form-control"  [(ngModel)]="model.gof" name="gof">
+                  No. of Diploma Students<input type="text" class="form-control"  [(ngModel)]="model.dof" name="dof">
+                  No. of Career Oriented Courses Students<input type="text" class="form-control"  [(ngModel)]="model.oof" name="oof">
+                  </td>
+             
+          </tr>
+           
+            </table>
+
+             <table class="table table-bordered">
+            <thead>
+         
+            <tr><td colspan=4 align="Center"><b>For session 2017-18</b><br><i></i></td></tr>
+            <tr><td  align="Center">Arts</td><td  align="Center">Science</td><td  align="Center">Commerce</td><td  align="Center">Other Faculty</td></tr>
+          </thead> 
+          <tr>
+          <td>No. of Ph.D Students<input type="text" class="form-control"  [(ngModel)]="model.cspha" name="cspha">
+            No. of PG Students<input type="text" class="form-control"  [(ngModel)]="model.cspga" name="cspga">
+            No. of UG Students<input type="text" class="form-control"  [(ngModel)]="model.csga" name="csga">
+            No. of Diploma Students<input type="text" class="form-control"  [(ngModel)]="model.csda" name="csda">
+            No. of Career Oriented Courses Students<input type="text" class="form-control"  [(ngModel)]="model.csoa" name="csoa">
+            </td>
+        <td>No. of Ph.D Students<input type="text" class="form-control"  [(ngModel)]="model.csphs" name="csphs">
+              No. of PG Students<input type="text" class="form-control"  [(ngModel)]="model.cspgs" name="cspgs">
+              No. of UG Students<input type="text" class="form-control"  [(ngModel)]="model.csgs" name="csgs">
+              No. of Diploma Students<input type="text" class="form-control"  [(ngModel)]="model.csds" name="csds">
+              No. of Career Oriented Courses Students<input type="text" class="form-control"  [(ngModel)]="model.csos" name="csos">
+              </td>
+        <td>No. of Ph.D Students<input type="text" class="form-control"  [(ngModel)]="model.csphc" name="csphc">
+                No. of PG Students<input type="text" class="form-control"  [(ngModel)]="model.cspgc" name="cspgc">
+                No. of UG Students<input type="text" class="form-control"  [(ngModel)]="model.csgc" name="csgc">
+                No. of Diploma Students<input type="text" class="form-control"  [(ngModel)]="model.csdc" name="csdc">
+                No. of Career Oriented Courses Students<input type="text" class="form-control"  [(ngModel)]="model.csoc" name="csoc">
+                </td>
+            
+                <td>No. of Ph.D Students<input type="text" class="form-control"  [(ngModel)]="model.csphof" name="csphof">
+                  No. of PG Students<input type="text" class="form-control"  [(ngModel)]="model.cspgof" name="cspgof">
+                  No. of UG Students<input type="text" class="form-control"  [(ngModel)]="model.csgof" name="csgof">
+                  No. of Diploma Students<input type="text" class="form-control"  [(ngModel)]="model.csdof" name="csdof">
+                  No. of Career Oriented Courses Students<input type="text" class="form-control"  [(ngModel)]="model.csoof" name="csoof">
+                  </td>
+             
+          </tr>
+           
+           
+            </table>
+          
+
+
+         </div>
+        </div>
+        
+          
+
+
+        <div *ngIf="paramid == 7 || paramid ==8" >
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+             
+                <tr><td colspan=4 align="Center"><b>For session 2016-17</b><br><i></i></td></tr>
+                <tr><td  align="Center">Arts</td><td align="Center">Science</td><td  align="Center">Commerce</td><td  align="Center">Other Faculty</td></tr>
+              </thead>
+                <tr><td> <b>General Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.tsagen" name="tsagen">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.tuagen" name="tuagen">
+                         <b>SC Category</b> <br>Sanctioned <input type="text" class="form-control"  [(ngModel)]="model.tsasc" name="tsasc">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.tuasc" name="tuasc">
+                          <b>ST Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.tsast" name="tsast">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.tuast" name="tuast">
+                         <b>OBC Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.tsaobc" name="tsaobc">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.tuaobc" name="tuaobc">
+                         </td>
+                         <td> <b><b>General Category</b></b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.tssgen" name="tssgen">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.tusgen" name="tusgen">
+                          <b>SC Category</b> <br>Sanctioned <input type="text" class="form-control"  [(ngModel)]="model.tsssc" name="tsssc">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.tussc" name="tussc">
+                           <b>ST Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.tssst" name="tssst">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.tusst" name="tusst">
+                          <b>OBC Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.tssobc" name="tssobc">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.tusobc" name="tusobc">             
+                          </td>
+                         
+                          <td> <b>General Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.tscgen" name="tscgen">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.tucgen" name="tucgen">
+                            <b>SC Category</b> <br>Sanctioned <input type="text" class="form-control"  [(ngModel)]="model.tscsc" name="tscsc">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.tucsc" name="tucsc">
+                             <b>ST Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.tscst" name="tscst">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.tucst" name="tucst">
+                            <b>OBC Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.tscobc" name="tscobc">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.tucobc" name="tucobc">
+                          </td>
+                      <td> <b>General Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.tsogen" name="tsogen">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.tuogen" name="tuogen">
+                  <b>SC Category</b> <br>Sanctioned <input type="text" class="form-control"  [(ngModel)]="model.tsosc" name="tsosc">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.tuosc" name="tuosc">
+                   <b>ST Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.tsost" name="tsost">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.tuost" name="tuost">
+                  <b>OBC Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.tsoobc" name="tsoobc">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.tuoobc" name="tuoobc">
+                   </td>
+                  </tr>
+                </table>
+               <table class="table table-bordered">
+                <thead>
+             
+                <tr><td colspan=4 align="Center"><b>For session 2017-18</b><br><i></i></td></tr>
+                <tr><td  align="Center">Arts</td><td align="Center">Science</td><td  align="Center">Commerce</td><td  align="Center">Other Faculty</td></tr>
+              </thead>
+              <tr>
+                <td> <b>General Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.ctsagen" name="ctsagen">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.ctuagen" name="ctuagen">
+                <b>SC Category</b> <br>Sanctioned <input type="text" class="form-control"  [(ngModel)]="model.ctsasc" name="ctsasc">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.ctuasc" name="ctuasc">
+                 <b>ST Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.ctsast" name="ctsast">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.ctuast" name="ctuast">
+                <b>OBC Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.ctsaobc" name="ctsaobc">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.ctuaobc" name="ctuaobc">
+                </td>
+                <td> <b>General Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.ctssgen" name="ctssgen">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.ctusgen" name="ctusgen">
+                 <b>SC Category</b> <br>Sanctioned <input type="text" class="form-control"  [(ngModel)]="model.ctsssc" name="ctsssc">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.ctussc" name="ctussc">
+                  <b>ST Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.ctssst" name="ctssst">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.ctusst" name="ctusst">
+                 <b>OBC Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.ctssobc" name="ctssobc">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.ctusobc" name="ctusobc">             
+                 </td>
+                
+                 <td> <b>General Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.ctscgen" name="ctscgen">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.ctucgen" name="ctucgen">
+                   <b>SC Category</b> <br>Sanctioned <input type="text" class="form-control"  [(ngModel)]="model.ctscsc" name="ctscsc">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.ctucsc" name="ctucsc">
+                    <b>ST Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.ctscst" name="ctscst">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.ctucst" name="ctucst">
+                   <b>OBC Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.ctscobc" name="ctscobc">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.ctucobc" name="ctucobc">
+                 </td>
+             <td> <b>General Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.ctsogen" name="ctsogen">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.ctuogen" name="ctuogen">
+         <b>SC Category</b> <br>Sanctioned <input type="text" class="form-control"  [(ngModel)]="model.ctsosc" name="ctsosc">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.ctuosc" name="ctuosc">
+          <b>ST Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.ctsost" name="ctsost">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.ctuost" name="ctuost">
+         <b>OBC Category</b> <br>Sanctioned<input type="text" class="form-control"  [(ngModel)]="model.ctsoobc" name="ctsoobc">Unfilled<input type="text" class="form-control"  [(ngModel)]="model.ctuoobc" name="ctuoobc">
+          </td>
+         </tr>
+                                 
+                
+              
+               
+                </table>             </div>
+            </div>             
+
+
+
+       
+
+            <div *ngIf="paramid == 21" >
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead>
+                 
+                    <tr><td colspan=4 align="Center"><b>For session 2016-17</b><br><i></i></td></tr>
+                    </thead>               
+                    <tr>
+                        <td>Transition rate of <b>General Category</b> Students<input type="text" class="form-control"  [(ngModel)]="model.gentr" name="gentr">
+                          Transition rate of <b>SC Category</b> Students<input type="text" class="form-control"  [(ngModel)]="model.sctr" name="sctr">
+                          Transition rate of <b>ST Category</b> Students<input type="text" class="form-control"  [(ngModel)]="model.sttr" name="sttr">
+                          Transition rate of <b>OBC Category</b> Students<input type="text" class="form-control"  [(ngModel)]="model.obctr" name="obctr">
+                          </td>
+                      </tr>
+                     
+                  
+                  
+                   
+                    </table>
+                    <table class="table table-bordered">
+                        <thead>
+                     
+                            <tr><td colspan=4 align="Center"><b>For session 2017-18</b><br><i></i></td></tr>
+                          </thead>               
+                          <tr>
+                              <td>Transition rate of <b>General Category</b> Students<input type="text" class="form-control"  [(ngModel)]="model.csgentr" name="csgentr">
+                                Transition rate of <b>SC Category</b> Students<input type="text" class="form-control"  [(ngModel)]="model.cssctr" name="cssctr">
+                                Transition rate of <b>ST Category</b> Students<input type="text" class="form-control"  [(ngModel)]="model.cssttr" name="sttr">
+                                Transition rate of <b>OBC Category</b> Students<input type="text" class="form-control"  [(ngModel)]="model.csobctr" name="obctr">
+                                </td>
+                            </tr>
+                         
+                        </table>
+                 </div>
+                </div>             
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+            <div *ngIf="paramid == 6 || paramid ==9 || paramid ==10 || paramid ==11 || paramid ==12 || paramid ==13 || paramid == 14 || paramid == 15 || paramid ==16 || paramid ==17 || paramid ==18 || paramid ==19 || paramid ==20 || paramid ==22 || paramid ==23 || paramid ==24 || paramid ==25" >
+                <div class="form-group">
+                    <label for="tiop" class="col-sm-2 control-label">For Session 2016-17: </label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" [(ngModel)]="model.fs1617" name="fs1617">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="tiop" class="col-sm-2 control-label">For session 2017-18: </label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" [(ngModel)]="model.fs1718" name="fs1718">
+                      </div>
+                    </div>
+            
+            </div>
+
+
+         
+
+
+
+
+
+              
+            <div *ngIf ="filestatus == false">
+            <div id="uploadfile" class="uploadfile">
+                <div class="form-group ">
+              <label class="control-label " for="fileupload">
+               Upload the Signed file
+              </label>
+                <input type="file" id="userImage" name="userImage" class="btn-info" />
+                <input type="button"  class="btn-warning" (click)="uploadbasedata()" value="Upload File" />
+                </div>
+               </div> 
+              </div>
+      
+      <div *ngIf ="filestatus == true">
+        Uploaded signed file is: <a href="http://misrusachd.in/api/baselineapi/selectblob.php?aid={{aid}}"> {{model.filename}}</a>
+              </div>
+      
+
+
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-8">
+            <button type="submit" class="btn btn-success">Update</button>
+            <a  class="btn btn-info" (click)="goBack()">Cancel</a>
+          </div>
+         
+        </div>
+
+
+
+
+</form>
+
+  </div>
+</div>
